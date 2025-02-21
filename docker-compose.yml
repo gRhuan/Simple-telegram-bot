@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  bot:
+    build: .
+    container_name: telegram_bot
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    restart: always
+    command: node bot.js
