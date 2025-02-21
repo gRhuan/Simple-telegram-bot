@@ -18,11 +18,20 @@ bot.onText(/\/help/, (msg) => {
     
   /start - Inicia o bot
   /help - Mostra os comandos disponíveis
+  /info - Informações sobre o bot
   oi - Saudação
 
 `
   );
 });
+
+bot.onText(/\/info/, (msg) => {
+  bot.sendMessage(
+    msg.chat.id,
+    `Este bot foi criado para ajudar com comandos básicos no Telegram.`
+  );
+});
+
 bot.on("message", (msg) => {
   console.log(
     "msg",
