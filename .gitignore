@@ -1,0 +1,33 @@
+# Ignore arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignore arquivos de log
+*.log
+
+# Ignore arquivos de compilação
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore arquivos de ambiente virtual
+venv/
+.env
+
+# Ignore arquivos de banco de dados
+*.sqlite3
+
+# Ignore arquivos de IDEs
+.vscode/
+.idea/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore arquivos de dependências
+package-lock.json
+yarn.lock
+
+# Ignore arquivos de build
+dist/
+build/
