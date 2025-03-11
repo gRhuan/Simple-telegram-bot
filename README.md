@@ -26,7 +26,7 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 ### 2️⃣ Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/bot-telegram.git
+git clone https://github.com/gRhuan/bot-telegram.git
 cd bot-telegram
 ```
 
