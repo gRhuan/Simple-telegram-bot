@@ -1,11 +1,9 @@
 import TelegramBot from "node-telegram-bot-api";
-import dotenv from "dotenv";
+
 import Router from "./router/Router.js";
 
-dotenv.config();
 const token = process.env.TELEGRAM_API_TOKEN;
 const client = new TelegramBot(token, { polling: true });
-
 client.on("polling_error", (err) => console.log(err));
 
 const router = new Router(client);
