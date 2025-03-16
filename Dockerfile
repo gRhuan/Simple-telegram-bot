@@ -13,4 +13,4 @@ RUN npm install
 COPY . .
 
 # Define o comando padrão para iniciar a aplicação
-CMD ["node", "bot.js"]
+CMD ["node", "./src/aplicationBotTelegram.js"]
