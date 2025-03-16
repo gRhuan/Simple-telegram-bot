@@ -1,4 +1,4 @@
-# Telegram Bot
+# 🤖 Telegram Bot
 
 Este projeto consiste em um bot para o Telegram desenvolvido em JavaScript utilizando a API do Telegram. O bot é capaz de responder perguntas básicas e executar comandos simples.
 
@@ -12,6 +12,8 @@ Este projeto consiste em um bot para o Telegram desenvolvido em JavaScript utili
 
 - Node.js
 - API do Telegram
+- Docker
+- Docker Compose
 
 ## 🚀 Como Executar o Projeto
 
@@ -38,16 +40,16 @@ npm install
 
 ### 4️⃣ Configurar variáveis de ambiente
 
-Na raiz do projeto e adicione sua chave de API do Telegram:
+Na raiz do projeto, crie um arquivo `.env` e adicione sua chave de API do Telegram:
 
 ```env
-token=seu_token_aqui
+TOKEN_API_TELEGRAM=seu_token_aqui
 ```
 
 ### 5️⃣ Iniciar o bot manualmente
 
 ```bash
-node bot.js
+npm start
 ```
 
 ### 🔹 Executando com Docker Compose
@@ -58,16 +60,38 @@ Se preferir, você pode rodar o bot utilizando Docker Compose. Basta seguir os p
 2. Execute o seguinte comando para iniciar o bot:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
-4. Para parar o bot:
+3. Para parar o bot:
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
-## 📜 Exemplo de Uso
+## 📂 Estrutura do Projeto
+
+A estrutura do projeto segue o padrão MVC (Model-View-Controller) para organizar o código de forma modular e escalável:
+
+```
+bot-telegram/
+├── src/
+│   ├── commands/
+│   │   ├── HelpCommand.js
+│   │   ├── InfoCommand.js
+│   │   ├── StartCommand.js
+│   ├── router/
+│   │   ├── Router.js
+│   ├── AppBotTelegram.js
+├── .env
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── README.md
+```
+
+### 📜 Exemplo de Uso
 
 O bot responde a comandos como:
 
@@ -75,7 +99,6 @@ O bot responde a comandos como:
 /start - Inicia a interação com o bot
 /help - Exibe a lista de comandos disponíveis
 /info - Fornece informações sobre o bot
-oi - Saudação
 ```
 
 ## 🤝 Contribuição
@@ -90,5 +113,4 @@ Sinta-se à vontade para contribuir! Para isso:
 
 ---
 
-Feito com ❤️ Gladyson Rhuan
-
+Feito com ❤️ por Gladyson Rhuan
