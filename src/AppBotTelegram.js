@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import Router from "./router/Router.js";
 
 dotenv.config();
-const token = process.env.TOKEN_API_TELEGRAM;
+const token = process.env.TELEGRAM_API_TOKEN;
 const client = new TelegramBot(token, { polling: true });
 
 client.on("polling_error", (err) => console.log(err));
