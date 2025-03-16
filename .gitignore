@@ -31,3 +31,6 @@ yarn.lock
 # Ignore arquivos de build
 dist/
 build/
+
+#env
+.env
