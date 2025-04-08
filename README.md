@@ -100,17 +100,3 @@ O bot responde a comandos como:
 /help - Exibe a lista de comandos disponíveis
 /info - Fornece informações sobre o bot
 ```
-
-## 🤝 Contribuição
-
-Sinta-se à vontade para contribuir! Para isso:
-
-1. Faça um fork do projeto
-2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
-3. Faça suas alterações e commit (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Envie para o repositório (`git push origin feature/nova-funcionalidade`)
-5. Abra um Pull Request
-
----
-
-Feito com ❤️ por Gladyson Rhuan
